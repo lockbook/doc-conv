@@ -1,0 +1,11 @@
+#!/bin/sh
+
+clang++ -std=c++11 \
+    -I vendored_deps/ \
+    -I vendored_deps/poppler/cpp/ \
+    -I vendored_deps/poppler/poppler/ \
+    -I vendored_deps/poppler/ \
+    vendored_deps/poppler/poppler/* \
+    vendored_deps/poppler/cpp/* \
+    vendored_deps/poppler/goo/* \
+    main.cpp
